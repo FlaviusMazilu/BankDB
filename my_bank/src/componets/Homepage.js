@@ -22,17 +22,20 @@ export const Homepage = () => {
 		console.log(user);
 		return (
 			<div>
-				<Grid container spacing={2} justifyContent="center" alignItems="center">
-					<Grid item xs={12}>
-						<Paper variant='elevation'>
+				<Grid container spacing={0} justifyContent="center" alignItems="center" style={{borderBottom:'none'}}>
+					<Grid backgroundColor='rgba(0, 0, 0, 0.7)'  item xs={12} >
+						<Paper  variant='elevation' style={{borderBottom:'none'}}>
 							{/* Welcome section */}
-							<h1 style={{ textAlign: 'center' }}>Welcome to My Bank</h1>
+							<h1 style={{ textAlign: 'center', background:'rgba(0, 0, 0, 0.7)' }}>Welcome, {user.name}!</h1>
 						</Paper>
 					</Grid>
-					<Grid item xs={12}>
-						<Paper>
-							<h2>Current Balance: {user.sold}$</h2>
-						</Paper>
+					<Grid container item xs={12} spacing={0} style={{backgroundColor:'#6EFF14', marginLeft:"5vw", marginTop:"2vh", marginRight:'5vw', borderRadius:"10px" }}>
+						<Grid item xs={12} container justifyContent="center" alignItems="center">
+							<h3>Current Balance:</h3>
+						</Grid>
+						<Grid item xs={12} container justifyContent="center" alignItems="center">
+							<h1> {user.sold} </h1>
+						</Grid>
 					</Grid>
 					<Grid item xs={12}>
 						<h3>Last transactions</h3>
