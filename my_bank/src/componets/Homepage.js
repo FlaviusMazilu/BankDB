@@ -2,8 +2,9 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import NavBar from './NavBar.js';
+import LastTransactions from './LastTransactions';
 
-const Homepage = () => {
+export const Homepage = () => {
 	return (
 		<div>
 			<Grid container spacing={2} justifyContent="center" alignItems="center">
@@ -20,15 +21,7 @@ const Homepage = () => {
 					</Paper>
 				</Grid>
 				<Grid item xs={12}>
-					<Paper>
-						{/* Last three transactions section */}
-						<h2>Last Three Transactions:</h2>
-						<ul>
-							<li>Transaction 1</li>
-							<li>Transaction 2</li>
-							<li>Transaction 3</li>
-						</ul>
-					</Paper>
+					<LastTransactions/>
 				</Grid>
 				<Grid item xs={12}>
 					<Paper>
@@ -42,5 +35,3 @@ const Homepage = () => {
 		</div>
 	);
 };
-
-export default Homepage;

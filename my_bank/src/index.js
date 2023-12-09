@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import Homepage from './componets/Homepage.js';
+import {Homepage} from './componets/Homepage.js';
 import Transactions from './componets/Transactions.js';
 import Cashback from './componets/Cashback.js';
 import EcoFeatures from './componets/EcoFeatures.js';
