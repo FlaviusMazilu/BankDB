@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import Main from './componets/Main.js';
+import Homepage from './componets/Homepage.js';
 import Transactions from './componets/Transactions.js';
 import Cashback from './componets/Cashback.js';
 import EcoFeatures from './componets/EcoFeatures.js';
@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
+    element: <Homepage />,
   },
   {
     path: "/transactions",

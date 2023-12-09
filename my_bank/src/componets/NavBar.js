@@ -8,7 +8,7 @@ const NavBar = () => {
 		<Paper variant='outlined'>
 			{/* Navigation bar */}
 			<nav>
-				<ul>
+				<ul style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly' }}>
 					<li><Link to="/">Home</Link></li>
 					<li><Link to="/transactions">Transactions</Link></li>
 					<li><Link to="/cashback">Cashback</Link></li>
