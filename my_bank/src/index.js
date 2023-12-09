@@ -7,7 +7,11 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import {Homepage} from './componets/Homepage.js';
 import Transactions from './componets/Transactions.js';
 import Cashback from './componets/Cashback.js';
-import EcoFeatures from './componets/EcoFeatures.js';
+import News from './componets/News.js';
+import EcoScore from './componets/eco_components/EcoScore.js';
+import PlantTree from './componets/eco_components/PlantTree.js';
+import Recycle from './componets/eco_components/Recycle.js';
+import EcoLearn from './componets/eco_components/EcoLearn.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -26,13 +30,30 @@ const router = createBrowserRouter([
   },
   {
     path: "/eco",
-    element: <EcoFeatures />,
+    element: <EcoScore />,
+  },
+  {
+    path: "news",
+    element: <News />,
+  },
+  { path: "eco/score",
+    element: <EcoScore />, 
+  },
+  { path: "eco/plant",
+    element: <PlantTree />, 
+  },
+  { path: "eco/recycle",
+    element: <Recycle />, 
+  },
+  { 
+    path: "eco/learn",
+    element: <EcoLearn />, 
   },
 ]);
 
 
 root.render(
-  <RouterProvider router={router}/>    
+  <RouterProvider router={router} />
 );
 
 // If you want to start measuring performance in your app, pass a function
