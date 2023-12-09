@@ -18,7 +18,11 @@ const userSchema = new mongoose.Schema({
       type: [{
         sender: String,
         receiver: String,
-        amount: Number
+        amount: Number,
+        date: {
+          type: Date,
+          default: Date.now()
+        }
       }],
       default: []
     }
