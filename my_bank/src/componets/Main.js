@@ -1,8 +1,9 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
+import NavBar from './NavBar.js';
 
-const Test = () => {
+const Main = () => {
 	return (
 		<Grid container spacing={2}>
 
@@ -36,17 +37,10 @@ const Test = () => {
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</Paper>
 			</Grid>
-			<Grid item xs={12}>
-				<Paper variant='outlined'>
-					{/* Buttons section */}
-					<button>Home</button>
-					<button>Transactions</button>
-					<button>Cashback</button>
-					<button>Eco Features</button>
-				</Paper>
-			</Grid>
+
+			<NavBar />
 		</Grid>
 	);
 };
 
-export default Test;
+export default Main;
