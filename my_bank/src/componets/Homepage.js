@@ -7,7 +7,6 @@ const Homepage = () => {
 	return (
 		<div>
 			<Grid container spacing={2} justifyContent="center" alignItems="center">
-
 				<Grid item xs={12}>
 					<Paper variant='elevation'>
 						{/* Welcome section */}
