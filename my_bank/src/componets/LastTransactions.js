@@ -17,6 +17,7 @@ const LastTransactions = ({transactions, length = 0}) => {
               sender={transaction.sender}
               receiver={transaction.receiver}
               amount={transaction.amount}
+              date={transaction.date}
             />
             <Grid item xs={12}>
               <hr className="rounded" />

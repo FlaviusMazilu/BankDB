@@ -30,6 +30,7 @@ exports.getAllUsers = async (req, res) => {
 exports.getUserById = async (req, res) => {
     try {
         const user = await User.find({_id: req.params.id});
+        user[0].transactions.sort((a, b) => b.date - a.date);
         console.log(user[0]);
         res.status(200).json({
             status: 'successs',

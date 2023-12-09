@@ -33,7 +33,7 @@ const router = createBrowserRouter([
     element: <EcoScore />,
   },
   {
-    path: "news",
+    path: "/news",
     element: <News />,
   },
   { path: "eco/score",

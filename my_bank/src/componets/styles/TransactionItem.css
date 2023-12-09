@@ -1,6 +1,7 @@
 .t-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .sender {
@@ -10,9 +11,8 @@
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
-  flex: 1;
+  flex: 2;
   padding: 10px;
-
 }
 
 .receiver {
@@ -26,6 +26,7 @@
   text-align: left;
   color: grey;
   margin-top: 5px;
+  padding-left: 50px;
 }
 
 .amount {
@@ -37,17 +38,30 @@ font-family: "Roboto", sans-serif;
   text-align: left;
   margin-top: 5px;
   float: right;
-  flex: 2;
-
 }
 
 
 .right-arrow {
-  /* size: 10%; */
   width: 30px;
   height: 30px;
   background-color: #DBFFD7;
   border-radius: 100%;
-  /* flex: 1; */
   border: 10px;
+}
+
+.left-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: #d7f3ff;
+  border-radius: 100%;
+  border: 10px;
+}
+
+.hover-effect-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-effect-card:hover {
+  transform: scale(1.1); /* Scale the div on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
 }
