@@ -1,50 +1,38 @@
-/* App.css */
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
+.App {
+  text-align: center;
 }
 
-.app-container {
-  position: relative;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-around;
-  padding: 10px;
-}
-
-.bottom-nav a {
-  text-decoration: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.bottom-nav a.active {
-  font-weight: bold;
+.App-link {
+  color: #61dafb;
 }
 
-/* Add the following styles to App.css */
-
-.page {
-  padding: 20px;
-}
-
-.back-button {
-  display: block;
-  margin-top: 20px;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.back-button:hover {
-  text-decoration: underline;
-}
-
-.green-store {
-  background-color: #8eff8e; /* Light green background for green stores */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
