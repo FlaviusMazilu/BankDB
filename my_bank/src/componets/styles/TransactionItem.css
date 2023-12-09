@@ -1,3 +1,8 @@
+.t-container {
+  display: flex;
+  align-items: center;
+}
+
 .sender {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
@@ -5,9 +10,13 @@
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
+  flex: 1;
+  padding: 10px;
+
 }
 
 .receiver {
+  flex: 1;
   font-family: Inter;
   font-size: 1.1rem;
   font-style: italic;
@@ -28,4 +37,17 @@ font-family: "Roboto", sans-serif;
   text-align: left;
   margin-top: 5px;
   float: right;
+  flex: 1;
+
+}
+
+
+.right-arrow {
+  /* size: 10%; */
+  width: 4%;
+  height: 4%;
+  background-color: #DBFFD7;
+  border-radius: 100%;
+  /* flex: 1; */
+  border: 10px;
 }
