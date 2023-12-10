@@ -1,0 +1,14 @@
+.main-page {
+    background-color: #18181a;
+    height: 100vh;
+}
+
+.header-container h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: left;
+  padding: 10px;
+  color: #ffffffd1;
+}
