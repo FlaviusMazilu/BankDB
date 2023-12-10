@@ -1,14 +1,14 @@
 .transactions-container {
-	background: #F9F8F8;
+	background: rgb(67, 63, 63);
 	border: solid;
 	border-width: 1px;
-	border-color: #F9F8F8;
+	border-color: #6a5f5f;
 	border-radius: 10px;
 	margin-top: 20px;
 	padding: 8px;
 }
 
 .rounded {
-  border-top: 2px solid #bbb;
+  border-top: 2px solid rgb(33, 131, 18);
   border-radius: 5px;
 }

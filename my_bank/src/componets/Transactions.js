@@ -1,13 +1,9 @@
 import React from 'react';
-import Paper from '@mui/material/Paper';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
 import { css } from '@emotion/react';
 import NavBar from './NavBar.js';
 import LastTransactions from './LastTransactions.js';
 import {useEffect, useState} from 'react';
-import { alignProperty } from '@mui/material/styles/cssUtils.js';
+import './styles/Transactions.css'
 const transactions = [
 	{ id: 1, title: 'Transaction 1' },
 	{ id: 2, title: 'Transaction 2' },
@@ -17,10 +13,11 @@ const transactions = [
 
 const transactionsCss = css`max-height: 300px; overflow: auto;`;
 const headerStyle = {
-    backgroundColor: '#eaeaea',
+    // backgroundColor: '#eaeaea',
     padding: '10px',
-    border: '1px solid #ccc',
-	textAlign: 'center'
+    // border: '1px solid #ccc',
+	textAlign: 'center',
+	color: "aliceblue"
   };
 const Transactions = () => {
 	const [user, setUser] = useState();
@@ -32,7 +29,7 @@ const Transactions = () => {
 	}, []);
 	if (user) {
 		return (
-			<div>
+			<div className='all-trans-container'>
 				<h2 style={headerStyle}>All transactions</h2>
 				<LastTransactions transactions={user.transactions} length={user.transactions.length}/>
 				<NavBar />

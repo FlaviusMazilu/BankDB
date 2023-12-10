@@ -8,7 +8,7 @@ const NavBar = () => {
 	const [value, setValue] = React.useState(curr_butt);
 	return (
 		<BottomNavigation
-			style={{ display:'flex', justifyContent:'center', position: 'absolute', width:'100vw',  bottom: '0vw', backgroundColor: "gray"}}
+			style={{ display:'flex', justifyContent:'center', position: 'absolute', width:'100vw',  bottom: '0vw', backgroundColor:'#262522'}}
 			showLabels
         	value={value}
         	onChange={(event, newValue) => {
@@ -16,9 +16,9 @@ const NavBar = () => {
 			curr_butt = newValue;
           	setValue(newValue);
         }}>
-			<BottomNavigationAction style={{position:'relative', width: "30vw"}} label={"Home"} component={Link} to="/" />
-			<BottomNavigationAction style={{position:'relative', width: "30vw"}} label={"Transactions"} component={Link} to="/transactions" />
-			<BottomNavigationAction style={{position:'relative', width: "30vw"}} label={"Go Eco"} component={Link} to="/eco" />
+			<BottomNavigationAction style={{position:'relative', width: "30vw", color: curr_butt == 0? "#4d9c44" : "white"}} label={"Home"} component={Link} to="/" />
+			<BottomNavigationAction style={{position:'relative', width: "30vw", color: curr_butt == 1? "#4d9c44" : "white"}} label={"Transactions"} component={Link} to="/transactions" />
+			<BottomNavigationAction style={{position:'relative', width: "30vw", color: curr_butt == 2? "#4d9c44" : "white"}} label={"Go Eco"} component={Link} to="/eco" />
 		</BottomNavigation>
 	);
 }

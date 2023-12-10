@@ -23,13 +23,13 @@ export const TransactionItem = ({sender, receiver, amount, date}) => {
       <Grid item xs={12} style={{ padding: "10px" }}>
       <div className="t-container">
         {(receiver == "YOU") ? 
-          [<img src="./right-arrow.svg" alt="Your SVG Icon" className="right-arrow"></img>,
+          [<img src="./left-arrow.svg" alt="Your SVG Icon" className="right-arrow"></img>,
             <div className="sender">{sender}</div>,
-            <div className="amount">- {amount} </div>
+            <div className="amount-negative">- {amount} </div>
             ]:
-          [<img src="./left-arrow.svg" alt="Your SVG Icon" className="left-arrow"></img>,
+          [<img src="./right-arrow.svg" alt="Your SVG Icon" className="left-arrow"></img>,
             <div className="sender">{receiver}</div>,
-            <div className="amount">+ {amount} </div>]
+            <div className="amount-positive">+ {amount} </div>]
           }
       </div>
       <div className="receiver">{formattedDate}</div>
