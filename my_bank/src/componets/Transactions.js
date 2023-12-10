@@ -16,6 +16,7 @@ const headerStyle = {
     // backgroundColor: '#eaeaea',
     padding: '10px',
     // border: '1px solid #ccc',
+	margin: '0px',
 	textAlign: 'center',
 	color: "aliceblue"
   };

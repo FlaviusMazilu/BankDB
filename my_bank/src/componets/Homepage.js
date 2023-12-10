@@ -26,12 +26,12 @@ export const Homepage = () => {
 							{/* Welcome section */}
 							<h1 style={{ textAlign: 'center'}}>Welcome, {user.name}!</h1>
 					</Grid>
-					<Grid container item xs={12} spacing={0} style={{backgroundColor:'#49b344', marginLeft:"5vw", marginTop:"2vh", marginRight:'5vw', borderRadius:"10px" }}>
+					<Grid container item xs={12} spacing={0} style={{backgroundColor:'rgba(150, 200, 150, 1)', marginLeft:"5vw", marginTop:"2vh", marginRight:'5vw', borderRadius:"10px" }}>
 						<Grid item xs={12} container justifyContent="center" alignItems="center">
 							<h3>Current Balance:</h3>
 						</Grid>
 						<Grid item xs={12} container justifyContent="center" alignItems="center">
-							<h1> {user.sold} </h1>
+							<h1> {user.sold}$</h1>
 						</Grid>
 					</Grid>
 					<Grid item xs={12}>

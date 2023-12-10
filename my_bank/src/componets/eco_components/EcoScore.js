@@ -20,11 +20,11 @@ const EcoScore = () => {
 	];
 
 	return (
-		<div>
+		<div style={{backgroundColor:'rgba(150, 200, 150, 1)', height:'100vh'}}>
 			<EcoNavBar />
-			<Typography variant="h5" style={{ textAlign: 'center' }}>Your Eco Points: {currentUserEcoPoints}</Typography>
+			<Typography variant="h4" style={{ textAlign: 'center' }}>Your Eco Points: {currentUserEcoPoints}</Typography>
 
-			<Paper style={{ maxHeight: "80vh", overflow: 'auto', justifyContent: 'center'}}>
+			<Paper style={{backgroundColor:'rgba(150, 200, 150, 1)', maxHeight: "80vh", overflow: 'auto', justifyContent: 'center'}}>
 				<List>
 					<Typography variant="h6" align="center">Leaderboard</Typography>
 					{leaderboardData.map((user, index) => (
